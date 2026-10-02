@@ -1,0 +1,2 @@
+# Replace the line below with your own AdSense publisher id once your account is approved.
+# Format: google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
