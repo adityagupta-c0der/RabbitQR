@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RabbitQR – Free QR Code Scanner &amp; Generator | Scan. Create. Done.</title>
+    <meta
+      name="description"
+      content="RabbitQR is a free, private QR code scanner and generator. Scan with your camera or an image, create QR codes for links, Wi-Fi, contacts and more, and download PNG, JPG or SVG. Everything runs in your browser."
+    />
+    <meta name="theme-color" content="#14532d" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net https://*.googleadservices.com https://*.adtrafficquality.google; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; media-src 'self' blob:; font-src 'self' data:; connect-src 'self' https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net https://*.adtrafficquality.google; frame-src https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <meta property="og:title" content="RabbitQR – Scan. Create. Done." />
+    <meta
+      property="og:description"
+      content="Free QR code scanner and generator that runs 100% in your browser. No uploads, no sign-up."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (function () {
+        try {
+          var s = localStorage.getItem("rabbitqr-theme");
+          var d = s ? s === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (d) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>RabbitQR needs JavaScript enabled to scan and generate QR codes in your browser.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
